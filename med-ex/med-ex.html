@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Contact Information</legend>
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" placeholder="John">
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" placeholder="Doe">
+            <label for="address">Address</label>
+            <input type="text" id="address" placeholder="1234 Dominoes Drive">
+        </fieldset>
+        <fieldset>
+            <legend>Order Information</legend>
+            <label for="delivery">Delivery</label>
+            <input type="radio" id="delivery" name="deliveryOrPickup" value="delivery">
+            <label for="pickup">Pickup</label>
+            <input type="radio" id="pickup" name="deliveryOrPickup" value="pickup">
+            <div>
+                <label for="specialInstructions">Special Instructions</label>
+                <textarea name="specialInstructions" id="specialInstructions" placeholder="Knock 3 times"></textarea>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Pizza Information</legend>
+            <div>
+                <label for="curstType">Select crust</label>
+                <select name="curstType" id="curstType">
+                    <!-- Value attribute specifies the value to be sent to a server -->
+                    <option value="" selected disabled>Select crust</option>
+                    <option>Thin Crust</option>
+                    <option>Normal</option>
+                    <option>Thick</option>
+                    <option>Sourdough</option>
+                    <option>Deep dish</option>
+                </select>
+            </div>
+            <div>
+                <label>Select toppings:</label>
+            </div>
+            <label for="pepperoni">Pepperoni</label>
+            <input type="checkbox" name="toppingType" id="pepperoni">
+            <label for="meatLovers">Meat Lovers</label>
+            <input type="checkbox" name="toppingType" id="meatLovers">
+            <label for="pineapple">Pineapple</label>
+            <input type="checkbox" name="toppingType" id="pineapple">
+            <label for="marg">Margarita</label>
+            <input type="checkbox" name="toppingType" id="marg">
+        </fieldset>
+    
+        <input type="submit" value="Submit Order">
+        <!-- <button type="submit">Send It</button> //does the same as above^ -->
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
+
