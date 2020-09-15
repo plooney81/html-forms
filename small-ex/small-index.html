@@ -1,0 +1,31 @@
+<form>
+    <fieldset>
+        <legend>Naming</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Your Name Here">
+    </fieldset>
+    <fieldset>
+        <legend>Radioing</legend>
+        <label for="buzz">94.5 the Buzz</label>
+        <input type="radio" id="buzz" name="radioHead" value="buzz">
+        <label for="eagle">106.9 the Eagle</label>
+        <input type="radio" id="eagle" name="radioHead" value="eagle">
+        <label for="sunny">Sunny 99.1</label>
+        <input type="radio" id="sunny" name="radioHead" value="sunny">
+    </fieldset>
+    <fieldset>
+        <legend>Selecting</legend>
+        <label for="speakerType">Select your listening method</label>
+        <select name="speakerType" id="speakerType">
+            <!-- Value attribute specifies the value to be sent to a server -->
+            <option value="" selected disabled>Select a device</option>
+            <option>Car stereo</option>
+            <option>Headphones</option>
+            <option>Boombox</option>
+        </select>
+    </fieldset>
+
+    <input type="submit" value="Just gonna Send It">
+    <!-- <button type="submit">Send It</button> //does the same as above^ -->
+    <button type="reset">Reset</button>
+</form>
