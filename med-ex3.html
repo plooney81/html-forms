@@ -4,19 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
 </head>
 <body>
-    <form id='form'>
-        <fieldset>
-            <legend>Custom</legend>
-            <label for="name">Name:</label>
-            <input type="text" name="name" id="name">
-    
-            <button type="submit">Send It</button>
-            <button type="reset">Reset</button>
-        </fieldset>
-    </form>
-    
+    <div class="container">
+        <form id='form'>
+            <div class="form-group">
+                <fieldset>
+                    <legend>Sign Up</legend>
+                    <div class="col p-0">
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="name" class="form-control" required>
+                    </div>
+                    <div class="col p-0 mt-2">
+                        <label for="password">Password:</label>
+                        <input type="password" name="password" id="password" class="form-control" required>
+                    </div>
+                    <div class="col p-0 mt-2">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" class="form-control" required>
+                    </div>
+                    <div class="col p-0 mt-2">
+                        <label for="robo">Robo:</label>
+                        <input type="text" name="robo" id="robo" class="form-control" required>
+                    </div>
+                    <div class="col p-0 mt-2">
+                        <label for="aboutMe">About Me:</label>
+                        <textarea name="aboutMe" id="aboutMe" class="form-control" cols="30" rows="10"></textarea>
+                    </div>
+
+
+                    <div class="mt-2">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="reset" class='btn btn-secondary'>Reset</button>
+                    </div>
+                </fieldset>
+            </div>
+        </form>
+    </div>
 </body>
 <script src="med.js"></script>
 </html>
